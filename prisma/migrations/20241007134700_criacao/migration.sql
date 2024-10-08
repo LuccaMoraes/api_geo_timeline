@@ -4,6 +4,7 @@ CREATE TABLE "Usuario" (
     "nome" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "senha" TEXT NOT NULL,
+    "data_nasc" TIMESTAMP(3),
     "status" BOOLEAN NOT NULL DEFAULT true,
 
     CONSTRAINT "Usuario_pkey" PRIMARY KEY ("id")

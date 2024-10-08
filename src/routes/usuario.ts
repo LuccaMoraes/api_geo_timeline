@@ -1,7 +1,10 @@
-import { Router } from "express";
-import * as usuario from "../controllers/usuario";
+import { Router } from 'express';
+import * as usuario from '../controllers/usuario';
 
 const rota = Router();
-rota.get('/usuario', usuario.getUsuario);
+
+rota.post('/usuario',usuario.cadastrar)
+rota.get('/usuario', usuario.consultar);
+rota.get('/usuario/:id', usuario.consultarPorId);
 
 export default rota;
